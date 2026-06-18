@@ -1,0 +1,6 @@
+insert into user_details (id , full_name , birthdate) values (10001 , 'Hussain' , current_date)
+insert into user_details (id , full_name , birthdate) values (10002 , 'Rami' , current_date)
+insert into user_details (id , full_name , birthdate) values (10003 , 'Ahmed' , current_date)
+insert into post (id , description , user_id) values (101 , 'i want to learn JWT ' , 10001)
+insert into post (id , description , user_id) values (102 , 'i want to learn Java ' , 10002)
+insert into post (id , description , user_id) values (103 , 'i want to learn Spring Boot ' , 10003)

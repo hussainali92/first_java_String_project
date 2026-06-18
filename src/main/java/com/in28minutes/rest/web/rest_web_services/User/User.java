@@ -1,7 +1,7 @@
 package com.in28minutes.rest.web.rest_web_services.User;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-//import com.in28minutes.rest.web.restful_web_services.Jpa.Post;
+import com.in28minutes.rest.web.rest_web_services.Jpa.Post;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -24,9 +24,9 @@ public class User {
     private LocalDate birthdate;
 
 
-   // @OneToMany(mappedBy = "user")
-   // @JsonIgnore
-   // private List<Post> posts ;
+   @OneToMany(mappedBy = "user")
+   @JsonIgnore
+    private List<Post> posts ;
 
     public User() {
     }
@@ -61,11 +61,11 @@ public class User {
         this.birthdate = birthDate;
     }
 
-   // public List<Post> getPosts() {
-   //     return posts;
-    //}
+    public List<Post> getPosts() {
+       return posts;
+    }
 
-   // public void setPosts(List<Post> posts) {
-    //    this.posts = posts;
-//    }
+    public void setPosts(List<Post> posts) {
+     this.posts = posts;
+  }
 }
